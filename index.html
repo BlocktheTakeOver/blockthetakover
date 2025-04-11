@@ -101,73 +101,28 @@
   </header>
 
   <section>
-  <h2><i class="fas fa-list-ol"></i>The 7-Point Resistance Plan</h2>
-  <ol>
-    <li><a href="plan1.html"><strong>Mass civil disobedience & general strikes</strong></a></li>
-    <li><a href="plan2.html"><strong>State-level resistance and parallel governance</strong></a></li>
-    <li><a href="plan3.html"><strong>Expose corruption and power abuse</strong></a></li>
-    <li><a href="plan4.html"><strong>Pressure military & law enforcement to uphold the Constitution</strong></a></li>
-    <li><a href="plan5.html"><strong>Invoke constitutional remedies (25th, 14th Amendments)</strong></a></li>
-    <li><a href="plan6.html"><strong>Unite across the political spectrum in a democracy coalition</strong></a></li>
-    <li><a href="plan7.html"><strong>Mobilize international support and delegitimize authoritarianism</strong></a></li>
-  </ol>
-</section>
+    <h2><i class="fas fa-list-ol"></i>The 7-Point Resistance Plan</h2>
+    <ol>
+      <li><a href="plan1.html"><strong>Mass civil disobedience & general strikes</strong></a></li>
+      <li><a href="plan2.html"><strong>State-level resistance and parallel governance</strong></a></li>
+      <li><a href="plan3.html"><strong>Expose corruption and power abuse</strong></a></li>
+      <li><a href="plan4.html"><strong>Pressure military & law enforcement to uphold the Constitution</strong></a></li>
+      <li><a href="plan5.html"><strong>Invoke constitutional remedies (25th, 14th Amendments)</strong></a></li>
+      <li><a href="plan6.html"><strong>Unite across the political spectrum in a democracy coalition</strong></a></li>
+      <li><a href="plan7.html"><strong>Mobilize international support and delegitimize authoritarianism</strong></a></li>
+    </ol>
+  </section>
 
-  <section id="signup">
-  <h2><i class="fas fa-user-plus"></i>Join the Movement</h2>
-  <form id="contactForm">
-    <label>
-      Your Name:
-      <input type="text" name="name" required>
-    </label>
-    <label>
-      Your Email:
-      <input type="email" name="email" required>
-    </label>
-    <label>
-      Your Message:
-      <textarea name="message" required></textarea>
-    </label>
-    <button type="submit">Send</button>
-    <p id="form-status" style="margin-top: 1em;"></p>
-  </form>
-</section>
-
-<script>
-  const form = document.getElementById('contactForm');
-  const status = document.getElementById('form-status');
-
-  form.addEventListener('submit', async function (e) {
-    e.preventDefault();
-
-    const formData = {
-      name: form.name.value,
-      email: form.email.value,
-      message: form.message.value
-    };
-
-    try {
-      const response = await fetch('https://formspree.io/f/mkgjkadv', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify(formData)
-      });
-
-      if (response.ok) {
-        status.textContent = "✅ Thank you! Your message has been sent.";
-        form.reset();
-      } else {
-        status.textContent = "⚠️ Oops! Something went wrong. Please try again.";
-      }
-    } catch (error) {
-      console.error('Form submission error:', error);
-      status.textContent = "⚠️ There was a connection error. Try again later.";
-    }
-  });
-</script>
+  <section>
+    <h2><i class="fas fa-user-plus"></i>Join the Movement</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="How would you like to help?" rows="4" required></textarea>
+      <button type="submit">Join Now</button>
+    </form>
+    <p id="form-status" style="margin-top: 1rem;"></p>
+  </section>
 
   <section id="faq">
     <h2><i class="fas fa-question-circle"></i>About & FAQ</h2>
@@ -183,10 +138,38 @@
     <p><strong>What if I’m scared to speak out?</strong><br>
     You’re not alone. A lot of people feel that way. That’s why we build this together—so no one has to do it alone. When you take a stand, others find the courage to follow. Small acts lead to big change. There’s strength in numbers.</p>
   </section>
-  </section>
 
   <footer>
     <p>&copy; 2025 Block the Takeover. All rights reserved.</p>
   </footer>
+
+  <script>
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+
+    form.addEventListener("submit", async function (event) {
+      event.preventDefault();
+      const data = new FormData(form);
+
+      try {
+        const response = await fetch("https://formspree.io/f/mkgjkadv", {
+          method: "POST",
+          headers: {
+            'Accept': 'application/json'
+          },
+          body: data
+        });
+
+        if (response.ok) {
+          status.innerHTML = "🎉 Thanks for joining! We'll be in touch soon.";
+          form.reset();
+        } else {
+          status.innerHTML = "⚠️ Oops, something went wrong. Try again later.";
+        }
+      } catch (error) {
+        status.innerHTML = "⚠️ Error submitting form.";
+      }
+    });
+  </script>
 </body>
 </html>
