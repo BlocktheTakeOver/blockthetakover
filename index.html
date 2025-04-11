@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block the Takeover</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #1a73e8;
+      --secondary-color: #ffffff;
+      --background-color: #f5f5f5;
+      --text-color: #333333;
+      --button-hover: #155ab6;
+      --highlight-color: #e8f0fe;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+    header {
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+      padding: 0;
+      text-align: center;
+    }
+    .banner {
+      width: 100%;
+      display: block;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+      background-color: var(--highlight-color);
+      border-radius: 10px;
+      margin-top: 1.5rem;
+    }
+    h1, h2, h3 {
+      margin-bottom: 1rem;
+    }
+    ol {
+      padding-left: 1.5rem;
+    }
+    .task-button {
+      display: inline-block;
+      margin: 0.5rem 0;
+      padding: 0.75rem 1rem;
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .task-button:hover {
+      background-color: var(--button-hover);
+    }
+    form input, form textarea, form button {
+      display: block;
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+      border: none;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: var(--button-hover);
+    }
+    footer {
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    i {
+      margin-right: 0.5rem;
+      color: var(--primary-color);
+    }
+  </style>
+</head>
+<body>
+  <nav style="background-color: #1a73e8; padding: 1rem; text-align: center;">
+    <a href="index.html" style="color: white; margin: 0 1rem; text-decoration: none; font-weight: bold;">Home</a>
+    <a href="bullybuster.html" style="color: white; margin: 0 1rem; text-decoration: none; font-weight: bold;">Bully Buster App</a>
+    <a href="#faq" style="color: white; margin: 0 1rem; text-decoration: none; font-weight: bold;">About / FAQ</a>
+  </nav>
+  <header>
+    <img src="banner-blockthetakover.png" alt="Block the Takeover Banner" class="banner">
+  </header>
+
+  <section>
+  <h2><i class="fas fa-list-ol"></i>The 7-Point Resistance Plan</h2>
+  <ol>
+    <li><a href="plan1.html"><strong>Mass civil disobedience & general strikes</strong></a></li>
+    <li><a href="plan2.html"><strong>State-level resistance and parallel governance</strong></a></li>
+    <li><a href="plan3.html"><strong>Expose corruption and power abuse</strong></a></li>
+    <li><a href="plan4.html"><strong>Pressure military & law enforcement to uphold the Constitution</strong></a></li>
+    <li><a href="plan5.html"><strong>Invoke constitutional remedies (25th, 14th Amendments)</strong></a></li>
+    <li><a href="plan6.html"><strong>Unite across the political spectrum in a democracy coalition</strong></a></li>
+    <li><a href="plan7.html"><strong>Mobilize international support and delegitimize authoritarianism</strong></a></li>
+  </ol>
+</section>
+
+  <section>
+    <h2><i class="fas fa-user-plus"></i>Join the Movement</h2>
+    <form name="signup" method="POST" data-netlify="true">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="How would you like to help?" rows="4"></textarea>
+      <button type="submit">Sign Up</button>
+    </form>
+  </section>
+
+  <section id="faq">
+    <h2><i class="fas fa-question-circle"></i>About & FAQ</h2>
+    <p><strong>Who's behind Block the Takeover?</strong><br>
+    This project was started by one educator and business owner in the community. Block the Takeover is an all-volunteer effort. We’re not asking for donations and have operated without any funding so far. It’s grassroots. It always starts with one person. Then another. Then a third. That’s how movements begin—maybe you’ll be next.</p>
+
+    <p><strong>Is this affiliated with a political party?</strong><br>
+    No. Block the Takeover is nonpartisan. It is pro-democracy, pro-Constitution, and anti-authoritarian—regardless of political party. We are Republicans, Democrats, and independents who believe in protecting democracy.</p>
+
+    <p><strong>What if I used to support Trump?</strong><br>
+    That’s okay. People grow. We welcome anyone who believes in truth, accountability, and protecting our country—even if you supported Trump before. If you're willing to stand up for democracy now, you belong here.</p>
+
+    <p><strong>What if I’m scared to speak out?</strong><br>
+    You’re not alone. A lot of people feel that way. That’s why we build this together—so no one has to do it alone. When you take a stand, others find the courage to follow. Small acts lead to big change. There’s strength in numbers.</p>
+  </section>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Block the Takeover. All rights reserved.</p>
+  </footer>
+</body>
+</html>
