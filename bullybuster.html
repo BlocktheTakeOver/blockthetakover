@@ -91,12 +91,14 @@
       margin-right: 0.75rem;
     }
 
-    .email-subscribe {
-      margin-top: 2rem;
+    .email-subscribe,
+    .role-form {
+      margin-top: 1rem;
       text-align: center;
     }
 
-    .email-subscribe input[type="email"] {
+    .email-subscribe input[type="email"],
+    .role-form input[type="email"] {
       padding: 0.5rem;
       width: 70%;
       max-width: 300px;
@@ -104,7 +106,8 @@
       border-radius: 4px;
     }
 
-    .email-subscribe button {
+    .email-subscribe button,
+    .role-form button {
       padding: 0.6rem 1.25rem;
       margin-top: 1rem;
       background-color: var(--primary-color);
@@ -112,6 +115,12 @@
       border: none;
       border-radius: 4px;
       cursor: pointer;
+    }
+
+    .email-subscribe .optional-role {
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+      color: #333;
     }
 
     footer {
@@ -148,44 +157,6 @@
   </section>
 
   <section>
-    <h2>🔥 Why This Matters</h2>
-    <ul>
-      <li>Online spaces are being derailed by persistent trolls, especially MAGA-aligned bullies.</li>
-      <li>These trolls intimidate, spread disinformation, and silence local voices.</li>
-      <li>Fear to speak up weakens community and democracy, allowing authoritarianism to grow.</li>
-    </ul>
-
-    <h2>💡 What We’re Building</h2>
-    <ul>
-      <li>Smart, pre-written replies to MAGA-style bullying</li>
-      <li>Tactics to flip power dynamics and protect silent readers</li>
-      <li>Tools to shut down toxic behavior without escalation</li>
-    </ul>
-
-    <h2>⚙️ How It Works (Beta)</h2>
-    <ul>
-      <li>Paste a troll’s comment into the tool</li>
-      <li>Get strategic responses: mirror, undermine, affirm</li>
-      <li>Track support reactions and troll silences</li>
-    </ul>
-
-    <h2>🎯 Strategic Goal</h2>
-    <ul>
-      <li>Reclaim public online space</li>
-      <li>Empower silent readers to engage or feel seen</li>
-      <li>Scale resistance in 2025–2026 to defeat toxic MAGA influence</li>
-    </ul>
-
-    <h2>💪 How You Can Help</h2>
-    <ul>
-      <li>Test the beta (launching 4/16)</li>
-      <li>Share screenshots of troll posts for training</li>
-      <li>Support with outreach, organizing, or tech</li>
-      <li>Be part of making democracy visible again</li>
-    </ul>
-  </section>
-
-  <section>
     <h2>🚀 Join the Mission: Pick Your Role</h2>
 
     <div class="role-card">
@@ -201,23 +172,46 @@
     <div class="role-card">
       <label><input type="checkbox"> <strong>Level 3: Spotters</strong></label>
       <p>Help us find threads where trolls or disinfo are dominating. Tag us or submit links—we’ll build the response playbook together.</p>
+      <form class="role-form" action="https://formspree.io/f/mkgjkadv" method="POST">
+        <input type="hidden" name="role" value="Spotter Interest">
+        <input type="email" name="email" placeholder="Your Email" required>
+        <button type="submit">Get More Info</button>
+      </form>
     </div>
 
     <div class="role-card">
       <label><input type="checkbox"> <strong>Level 4: Responders</strong></label>
       <p>Join the reply team. We’ll give you tested responses, templates, and context so you’re never posting alone.</p>
+      <form class="role-form" action="https://formspree.io/f/mkgjkadv" method="POST">
+        <input type="hidden" name="role" value="Responder Interest">
+        <input type="email" name="email" placeholder="Your Email" required>
+        <button type="submit">Get More Info</button>
+      </form>
     </div>
 
     <div class="role-card">
       <label><input type="checkbox"> <strong>Level 5: Strategists</strong></label>
       <p>Help design and refine the big-picture plan—language, tactics, escalation strategies. Think of it like resistance R&D.</p>
+      <form class="role-form" action="https://formspree.io/f/mkgjkadv" method="POST">
+        <input type="hidden" name="role" value="Strategist Interest">
+        <input type="email" name="email" placeholder="Your Email" required>
+        <button type="submit">Get More Info</button>
+      </form>
     </div>
 
     <div class="email-subscribe">
       <p>🔔 <em>Get early access to the Bully Buster app + response toolkit. We’ll email updates and resources based on the roles you select.</em></p>
-      <input type="email" placeholder="Your Email">
-      <br>
-      <button>Join the Team</button>
+      <form action="https://formspree.io/f/mkgjkadv" method="POST">
+        <input type="hidden" name="role" value="General Signup">
+        <input type="email" name="email" placeholder="Your Email" required>
+        <br>
+        <label class="optional-role">
+          <input type="checkbox" name="Level1or2" value="Yes">
+          I want to help as a Signal Booster or Encourager — please send tips I can use.
+        </label>
+        <br>
+        <button type="submit">Join the Team</button>
+      </form>
     </div>
   </section>
 
