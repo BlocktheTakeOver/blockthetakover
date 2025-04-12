@@ -14,6 +14,7 @@
       --button-hover: #155ab6;
       --highlight-color: #e8f0fe;
     }
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -21,41 +22,98 @@
       background-color: var(--background-color);
       color: var(--text-color);
     }
+
     header {
       background-color: var(--primary-color);
       color: var(--secondary-color);
       padding: 0;
       text-align: center;
     }
+
     .banner {
       width: 100%;
       height: auto;
-      max-height: 200px;
-      object-fit: cover;
       display: block;
     }
+
     section {
-      padding: 2rem 1rem;
       max-width: 800px;
       margin: auto;
+      padding: 2rem 1rem;
       background-color: var(--highlight-color);
       border-radius: 10px;
-      margin-top: 1.5rem;
+      margin-top: 2rem;
     }
+
     h1, h2, h3 {
-      margin-bottom: 1rem;
+      color: var(--primary-color);
     }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
     nav {
-      background-color: #1a73e8;
-      padding: 1rem;
+      background-color: var(--primary-color);
+      padding: 1rem 1rem 0.5rem;
       text-align: center;
     }
+
+    nav div:first-child {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 0.75rem;
+      letter-spacing: 0.5px;
+    }
+
     nav a {
       color: white;
       margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
     }
+
+    .role-card {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+
+    .role-card label {
+      display: flex;
+      align-items: center;
+    }
+
+    .role-card input[type="checkbox"] {
+      margin-right: 0.75rem;
+    }
+
+    .email-subscribe {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .email-subscribe input[type="email"] {
+      padding: 0.5rem;
+      width: 70%;
+      max-width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .email-subscribe button {
+      padding: 0.6rem 1.25rem;
+      margin-top: 1rem;
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
     footer {
       background-color: var(--primary-color);
       color: var(--secondary-color);
@@ -63,17 +121,17 @@
       padding: 1rem;
       margin-top: 2rem;
     }
-    ul {
-      list-style-type: disc;
-      padding-left: 1.5rem;
-    }
   </style>
 </head>
 <body>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="bullybuster.html">Bully Buster App</a>
-    <a href="index.html#faq">About / FAQ</a>
+    <div>Block the Takeover</div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="bullybuster.html">Bully Buster App</a>
+      <a href="wearethe35.html">We Are the 3.5%</a>
+      <a href="index.html#faq">About / FAQ</a>
+    </div>
   </nav>
 
   <header>
@@ -81,39 +139,86 @@
   </header>
 
   <section>
-    <h2>🛡️ Bully Buster Project</h2>
-    <p><strong>Reclaiming Our Online Communities from Trolls & Bullies</strong></p>
-    <h3>🔥 Why This Matters</h3>
+    <h2>🔥 Our Mission</h2>
+    <p><strong>We fight disinformation and cruelty with clarity, calm, and truth.</strong></p>
+    <p>We’re not here to argue with trolls.<br>
+    We’re here to show the audience—and the silent majority—that there’s another way.</p>
+    <p><em>This is how culture shifts:<br>
+    One comment. One thread. One truth at a time.</em></p>
+  </section>
+
+  <section>
+    <h2>🔥 Why This Matters</h2>
     <ul>
-      <li>Online spaces like Facebook and other platforms are being derailed by persistent trolls, especially MAGA-aligned bullies.</li>
-      <li>These trolls spread disinformation and silence community voices.</li>
-      <li>This weakens democracy and allows authoritarianism to spread.</li>
+      <li>Online spaces are being derailed by persistent trolls, especially MAGA-aligned bullies.</li>
+      <li>These trolls intimidate, spread disinformation, and silence local voices.</li>
+      <li>Fear to speak up weakens community and democracy, allowing authoritarianism to grow.</li>
     </ul>
-    <h3>💡 What We’re Building</h3>
+
+    <h2>💡 What We’re Building</h2>
     <ul>
-      <li>Pre-written, punchy replies to MAGA-style bullying</li>
-      <li>Tactics that flip the power dynamic</li>
-      <li>Protection for silent readers and local community voices</li>
-      <li>Stay empowered without starting fights</li>
+      <li>Smart, pre-written replies to MAGA-style bullying</li>
+      <li>Tactics to flip power dynamics and protect silent readers</li>
+      <li>Tools to shut down toxic behavior without escalation</li>
     </ul>
-    <h3>⚙️ How It Works (Beta)</h3>
+
+    <h2>⚙️ How It Works (Beta)</h2>
     <ul>
-      <li>Copy/paste a troll’s comment into the app</li>
-      <li>Get smart, strategic responses</li>
-      <li>Track outcomes like community support and troll silence</li>
+      <li>Paste a troll’s comment into the tool</li>
+      <li>Get strategic responses: mirror, undermine, affirm</li>
+      <li>Track support reactions and troll silences</li>
     </ul>
-    <h3>🎯 Strategic Goal</h3>
+
+    <h2>🎯 Strategic Goal</h2>
     <ul>
-      <li>Flip the dynamics in troll-heavy threads</li>
-      <li>Empower silent readers</li>
-      <li>Scale up for the 2025–2026 election cycle</li>
+      <li>Reclaim public online space</li>
+      <li>Empower silent readers to engage or feel seen</li>
+      <li>Scale resistance in 2025–2026 to defeat toxic MAGA influence</li>
     </ul>
-    <h3>💪 How You Can Help</h3>
+
+    <h2>💪 How You Can Help</h2>
     <ul>
-      <li>Test the tool when the beta launches May 14</li>
-      <li>Submit screenshots of trolling for training</li>
-      <li>Help with outreach, organizing, or tech</li>
+      <li>Test the beta (launching 4/16)</li>
+      <li>Share screenshots of troll posts for training</li>
+      <li>Support with outreach, organizing, or tech</li>
+      <li>Be part of making democracy visible again</li>
     </ul>
+  </section>
+
+  <section>
+    <h2>🚀 Join the Mission: Pick Your Role</h2>
+
+    <div class="role-card">
+      <label><input type="checkbox"> <strong>Level 1: Signal Boosters</strong></label>
+      <p>Like, share, or react to posts and replies that push back against bullying and disinformation. Every tap helps keep the truth visible.</p>
+    </div>
+
+    <div class="role-card">
+      <label><input type="checkbox"> <strong>Level 2: Encouragers</strong></label>
+      <p>Drop quick supportive replies to counter troll pile-ons. Even a “Thanks for saying this” can shift the tone of a thread.</p>
+    </div>
+
+    <div class="role-card">
+      <label><input type="checkbox"> <strong>Level 3: Spotters</strong></label>
+      <p>Help us find threads where trolls or disinfo are dominating. Tag us or submit links—we’ll build the response playbook together.</p>
+    </div>
+
+    <div class="role-card">
+      <label><input type="checkbox"> <strong>Level 4: Responders</strong></label>
+      <p>Join the reply team. We’ll give you tested responses, templates, and context so you’re never posting alone.</p>
+    </div>
+
+    <div class="role-card">
+      <label><input type="checkbox"> <strong>Level 5: Strategists</strong></label>
+      <p>Help design and refine the big-picture plan—language, tactics, escalation strategies. Think of it like resistance R&D.</p>
+    </div>
+
+    <div class="email-subscribe">
+      <p>🔔 <em>Get early access to the Bully Buster app + response toolkit. We’ll email updates and resources based on the roles you select.</em></p>
+      <input type="email" placeholder="Your Email">
+      <br>
+      <button>Join the Team</button>
+    </div>
   </section>
 
   <footer>
