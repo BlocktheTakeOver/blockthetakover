@@ -70,6 +70,25 @@
     .role-card input[type="checkbox"] {
       margin-right: 0.75rem;
     }
+    .role-card form {
+      margin-top: 0.5rem;
+    }
+    .role-card input[type="email"] {
+      padding: 0.4rem;
+      width: 100%;
+      max-width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .role-card button {
+      margin-top: 0.5rem;
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
     .email-subscribe {
       margin-top: 1rem;
       text-align: center;
@@ -143,16 +162,31 @@
     <div class="role-card">
       <label><input type="checkbox"> ✅ Level 3: Spotters</label>
       <p>Help us find threads where trolls or disinfo are dominating.<br>Tag us or submit links—we’ll build the response playbook together.</p>
+      <form action="https://formspree.io/f/mkgjkadv" method="POST">
+        <input type="hidden" name="role" value="Level 3 - Spotter">
+        <input type="email" name="email" placeholder="Your Email" required>
+        <button type="submit">Get Involved</button>
+      </form>
     </div>
 
     <div class="role-card">
       <label><input type="checkbox"> ✅ Level 4: Responders</label>
       <p>Join the reply team.<br>We’ll give you tested responses, templates, and context so you’re never posting alone.</p>
+      <form action="https://formspree.io/f/mkgjkadv" method="POST">
+        <input type="hidden" name="role" value="Level 4 - Responder">
+        <input type="email" name="email" placeholder="Your Email" required>
+        <button type="submit">Get Involved</button>
+      </form>
     </div>
 
     <div class="role-card">
       <label><input type="checkbox"> ✅ Level 5: Strategists</label>
       <p>Help design and refine the big-picture plan—language, tactics, escalation strategies.<br>Think of it like resistance R&D.</p>
+      <form action="https://formspree.io/f/mkgjkadv" method="POST">
+        <input type="hidden" name="role" value="Level 5 - Strategist">
+        <input type="email" name="email" placeholder="Your Email" required>
+        <button type="submit">Get Involved</button>
+      </form>
     </div>
 
     <div class="email-subscribe">
