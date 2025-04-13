@@ -32,7 +32,7 @@
 
     .banner {
       width: 100%;
-      height: 400px;
+      height: auto;
       display: block;
     }
 
@@ -165,62 +165,40 @@
   </section>
 
   <section>
-    <h2>🚀 Join the Mission: Pick Your Role</h2>
+    <h2>Join the Mission: Pick Your Role</h2>
 
     <div class="role-card">
-      <label><input type="checkbox"> <strong>Level 1: Signal Boosters</strong></label>
-      <p>Like, share, or react to posts and replies that push back against bullying and disinformation. Every tap helps keep the truth visible.</p>
+      <label><input type="checkbox"> ✅ Level 1: Signal Boosters</label>
+      <p>Like, share, or react to posts and replies that push back against bullying and disinformation.<br>Every tap helps keep the truth visible.</p>
     </div>
 
     <div class="role-card">
-      <label><input type="checkbox"> <strong>Level 2: Encouragers</strong></label>
-      <p>Drop quick supportive replies to counter troll pile-ons. Even a “Thanks for saying this” can shift the tone of a thread.</p>
+      <label><input type="checkbox"> ✅ Level 2: Encouragers</label>
+      <p>Drop quick supportive replies to counter troll pile-ons.<br>Even a “Thanks for saying this” can shift the tone of a thread.</p>
     </div>
 
     <div class="role-card">
-      <label><input type="checkbox"> <strong>Level 3: Spotters</strong></label>
-      <p>Help us find threads where trolls or disinfo are dominating. Tag us or submit links—we’ll build the response playbook together.</p>
-      <form class="role-form" action="https://formspree.io/f/mkgjkadv" method="POST">
-        <input type="hidden" name="role" value="Spotter Interest">
-        <input type="email" name="email" placeholder="Your Email" required>
-        <button type="submit">Get More Info</button>
-      </form>
+      <label><input type="checkbox"> ✅ Level 3: Spotters</label>
+      <p>Help us find threads where trolls or disinfo are dominating.<br>Tag us or submit links—we’ll build the response playbook together.</p>
     </div>
 
     <div class="role-card">
-      <label><input type="checkbox"> <strong>Level 4: Responders</strong></label>
-      <p>Join the reply team. We’ll give you tested responses, templates, and context so you’re never posting alone.</p>
-      <form class="role-form" action="https://formspree.io/f/mkgjkadv" method="POST">
-        <input type="hidden" name="role" value="Responder Interest">
-        <input type="email" name="email" placeholder="Your Email" required>
-        <button type="submit">Get More Info</button>
-      </form>
+      <label><input type="checkbox"> ✅ Level 4: Responders</label>
+      <p>Join the reply team.<br>We’ll give you tested responses, templates, and context so you’re never posting alone.</p>
     </div>
 
     <div class="role-card">
-      <label><input type="checkbox"> <strong>Level 5: Strategists</strong></label>
-      <p>Help design and refine the big-picture plan—language, tactics, escalation strategies. Think of it like resistance R&D.</p>
-      <form class="role-form" action="https://formspree.io/f/mkgjkadv" method="POST">
-        <input type="hidden" name="role" value="Strategist Interest">
-        <input type="email" name="email" placeholder="Your Email" required>
-        <button type="submit">Get More Info</button>
-      </form>
+      <label><input type="checkbox"> ✅ Level 5: Strategists</label>
+      <p>Help design and refine the big-picture plan—language, tactics, escalation strategies.<br>Think of it like resistance R&amp;D.</p>
     </div>
 
     <div class="email-subscribe">
       <p>🔔 <em>Get early access to the Bully Buster app + response toolkit. We’ll email updates and resources based on the roles you select.</em></p>
       <form action="https://formspree.io/f/mkgjkadv" method="POST" onsubmit="showConfirmation(event)">
-        <input type="hidden" name="role" value="General Signup">
         <input type="email" name="email" placeholder="Your Email" required>
-        <br>
-        <label class="optional-role">
-          <input type="checkbox" name="Level1or2" value="Yes">
-          I want to help as a Signal Booster or Encourager — please send tips I can use.
-        </label>
-        <br>
         <button type="submit">Join the Team</button>
       </form>
-      <p id="confirmation-message" class="thank-you">🎉 Thank you for signing up! Check your inbox for updates.</p>
+      <p id="confirmation-message" class="thank-you">🎉 Thanks for joining! Check your inbox soon.</p>
     </div>
   </section>
 
